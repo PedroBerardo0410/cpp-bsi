@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1713181280 source:c:\users\dell\desktop\ex codeblocks\project\ex6\main.cpp
+	<iostream>
+	<cstdlib>
+	<locale>
+

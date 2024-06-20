@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1716807142 source:c:\users\dell\desktop\ex codeblocks\project\funcao strcat\main.cpp
+	<iostream>
+	<cstring>
+

@@ -1,0 +1,5 @@
+O programa a seguir calcula o IMC da pessoa.
+Quantos clientes você deseja cadastrar? 
+O IMC do cliente pedro é: 10
+
+O IMC do cliente marcel é: 25

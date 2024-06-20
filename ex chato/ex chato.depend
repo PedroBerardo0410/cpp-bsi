@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1713303996 source:c:\users\dell\desktop\ex codeblocks\project\ex chato\main.cpp
+	<iostream>
+	<cstring>
+	<cstdlib>
+	<locale>
+	<iomanip>
+
