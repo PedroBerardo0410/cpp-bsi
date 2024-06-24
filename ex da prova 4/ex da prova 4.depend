@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1719253449 source:c:\users\dell\desktop\ex codeblocks\project\ex da prova 4\main.cpp
+	<cstdlib>
+	<iostream>
+	<cstring>
+
