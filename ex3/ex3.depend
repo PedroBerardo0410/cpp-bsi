@@ -1,6 +1,5 @@
 # depslib dependency file v1.0
-1713178615 source:c:\users\dell\desktop\ex codeblocks\project\ex3\main.cpp
+1725365882 source:c:\users\aluno\desktop\aula 1\ex3\main.cpp
 	<iostream>
-	<cstdlib>
 	<locale>
 

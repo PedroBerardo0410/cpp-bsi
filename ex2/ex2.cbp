@@ -33,8 +33,12 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="main.cpp" />
-		<Extensions>
-			<lib_finder disable_auto="1" />
-		</Extensions>
+		<Unit filename="operacao.cpp">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Unit filename="operacoes.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

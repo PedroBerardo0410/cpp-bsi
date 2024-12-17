@@ -1,28 +1,32 @@
 #include <iostream>
-#include <cstdlib>
-#include <locale>
-
+#include "operacoes.h"
+#include <string>
 
 using namespace std;
 
 int main()
 {
-    setlocale(LC_ALL, "Portuguese");
+    Jogador jogadores[10];
 
-    int mo, mp, mb, soma;
+    cout << "Insira as informações dos 10 jogadores: \n";
+    for(int i=0;i<10;i++){
+        cout << "Jogador "<<i+1<<":\n";
+        atribui(jogadores[i]);
+    }
+    cout << "\nDados dos jogadores:\n";
+    for(int i=0;i<10;i++){
+        imprime(jogadores[i]);
+    }
 
-    cout << "Digite o Número de medalhas de Ouro que o Brasil ganhou nas Olimpíadas: \n";
-    cin >> mo;
-    cout << "Digite o Número de medalhas de Prata que o Brasil ganhou nas Olimpíadas:  \n";
-    cin >> mp;
-    cout << "Digite o Número de  medalhas de Bronze que o Brasil ganhou nas Olimpíadas:  \n";
-    cin >> mb;
+    cout << "Total de gols de todos os jogadores: " << totalGols(jogadores, 10)<<endl;
 
-    soma = mo + mp + mb;
-
-    cout << "O Brasil ganhou " << soma << " medalhas nas Olimpíadas. \n";
-
-
-
+    cout << "\nVerificação dos jogadores bons: \n";
+    for(int i=0;i<10;i++){
+        if(jogadorBom(jogadores[i])){
+            cout << jogadores [i].nome << " é um bom jogador!\n";
+        }else{
+            cout << jogadores[i].nome << " não tem mais gols do que partidas.\n";
+        }
+    }
     return 0;
 }
