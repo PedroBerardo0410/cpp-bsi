@@ -1,49 +1,52 @@
 #include <iostream>
-#include <cmath>
-#include "operacao.h"
 
 using namespace std;
 
+void pedir(int vet[])
+{
+    for(int i=0; i<=9; i++)
+    {
+        cout << "Informe o "<<i+1<<"° número: "<<endl;
+        cin >> vet[i];
+    }
+}
 
-int main() {
- //   double *raio = new double;
-    double raio;
-    int opcao;
+void em_ordem(int vet[])
+{
+    cout << "Números digitados:\n";
+    for(int i=0; i<=9; i++)
+    {
+        if(i == 0)
+        {
+            int aux = vet[i];
 
-    do {
-        cout << "\nMenu:\n";
-        cout << "1. Calcular área\n";
-        cout << "2. Calcular volume\n";
-        cout << "3. Exibir raio\n";
-        cout << "4. Sair\n";
-        cout << "Escolha uma opcao: ";
-        cin >> opcao;
-
-        switch (opcao) {
-        case 1:
-            receberRaio(&raio);
-            //raio = 2;
-            cout << "A área da esfera é: " << calcularArea(&raio) << endl;
-            break;
-        case 2:
-            receberRaio(&raio);
-             //raio = 2;
-            cout << "O volume da esfera é: " << calcularVolume(&raio) << endl;
-            break;
-        case 3:
-            //raio =2;
-            receberRaio(&raio);
-            exibirRaio(&raio);
-            break;
-        case 4:
-            cout << "Saindo...\n";
-            break;
-        default:
-            cout << "Opção inválida! Tente novamente.\n";
+            if(aux > vet[i+1])
+            {
+                vet[i] = vet[i+1];
+                vet[i+1] = aux;
+            }
         }
-    } while (opcao != 4);
+        cout << vet[i]<<endl;
+    }
+}
 
-    //delete(raio);
+void invertido(int vet[])
+{
+    cout << "Números em ordem invertida: \n";
+    for(int i=9; i>=0; i--)
+    {
+
+        cout << vet[i]<<endl;
+    }
+}
+
+int main()
+{
+    int vet[10];
+
+    pedir(vet);
+    em_ordem(vet);
+    invertido(vet);
 
     return 0;
 }

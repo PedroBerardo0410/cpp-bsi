@@ -1,32 +1,43 @@
 #include <iostream>
-#include "operacoes.h"
-#include <string>
 
 using namespace std;
 
+void pedir(char vet[]){
+    for(int i=0;i<15;i++){
+        cout << "Informe o "<<i+1<<"° caractere: "<<endl;
+        cin >> vet[i];
+    }
+}
+
+void mostrar(char vet[]){
+    cout << "Caractere digitados:\n";
+    for(int i=0;i<15;i++){
+        cout << vet[i]<<endl;
+    }
+}
+
+void invertido(char vet[]){
+    cout << "Caractere em ordem invertida: \n";
+    for(int i=0;i<15;i++){
+            if(i == 0){
+                cout << vet[i+1]<<endl;
+                continue;
+            }
+            if(i == 1){
+                cout << vet[i-1]<<endl;
+                continue;
+            }
+        cout << vet[i]<<endl;
+    }
+}
+
 int main()
 {
-    Jogador jogadores[10];
+    char vet[15];
 
-    cout << "Insira as informações dos 10 jogadores: \n";
-    for(int i=0;i<10;i++){
-        cout << "Jogador "<<i+1<<":\n";
-        atribui(jogadores[i]);
-    }
-    cout << "\nDados dos jogadores:\n";
-    for(int i=0;i<10;i++){
-        imprime(jogadores[i]);
-    }
+    pedir(vet);
+    mostrar(vet);
+    invertido(vet);
 
-    cout << "Total de gols de todos os jogadores: " << totalGols(jogadores, 10)<<endl;
-
-    cout << "\nVerificação dos jogadores bons: \n";
-    for(int i=0;i<10;i++){
-        if(jogadorBom(jogadores[i])){
-            cout << jogadores [i].nome << " é um bom jogador!\n";
-        }else{
-            cout << jogadores[i].nome << " não tem mais gols do que partidas.\n";
-        }
-    }
     return 0;
 }

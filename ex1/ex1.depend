@@ -1,13 +1,4 @@
 # depslib dependency file v1.0
-1729598028 source:c:\users\dell\desktop\prof juliana codeblocks 2 semestre\exercícios sab letivo\ex1\main.cpp
+1738767258 source:c:\users\aluno\desktop\ex\ex1\main.cpp
 	<iostream>
-	<cmath>
-	"operacao.h"
-
-1729597610 c:\users\dell\desktop\prof juliana codeblocks 2 semestre\exercícios sab letivo\ex1\operacao.h
-
-1729598204 source:c:\users\dell\desktop\prof juliana codeblocks 2 semestre\exercícios sab letivo\ex1\operacao.cpp
-	<iostream>
-	<cmath>
-	"operacao.h"
 
